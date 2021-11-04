@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flutter Projects</title>
+</head>
+<body>
+    
+    <section id="selection">
+        <div class="heading">
+            <p>Odera Nwosu</p>
+        <h1>Flutter Projects  <span><img src="flutterlogo.svg"/>
+        </span></h1>
+        </div>
+        
+        
+        
+    </section>
+</body>
+
+<script>
+
+    generateCard("oopseek.gif", 'Hoop Seek', `To practice with maps and other Google API's I'm working on a project called "Hoop Seek" where users can locate basketball matches around them in real time along with host matches themselves.`, 'hoopseek');
+    generateCard("il.gif", 'iL: Shopping App', `While still very barebones, this app I wanted and plan to recreate instagram stories a long with modeling how shopping apps work `, 'il');
+    generateCard("il.gif", 'iL: Shopping App', `While still very barebones, this app I wanted and plan to recreate instagram stories a long with modeling how shopping apps work `, 'il');
+    
+
+    function generateCard(image, title, text, projectName){
+        let section = document.getElementById("selection")
+
+        
+
+        let card =  document.createElement("div")
+        card.setAttribute('class', 'card');
+
+        var cardText =  document.createElement("div");
+        cardText.setAttribute('class', 'card-text');
+
+        var docTitle = document.createElement("h3");
+        docTitle.style.color = "rgb(32, 32, 32)";
+
+        docTitle.innerHTML = title;
+
+        var docDesc = document.createElement("p");
+        docDesc.innerHTML = text;
+
+        var link = document.createElement("a");
+        link.setAttribute('href', `${projectName}.html`);
+        link.innerHTML = "View Project";
+
+       cardText.append(docTitle);
+        cardText.append(docDesc);
+        cardText.append(link);
+
+        var cardImage = document.createElement("img");
+        cardImage.setAttribute("class", "card-image");
+        cardImage.setAttribute("src", image);
+
+    
+        card.append(cardImage)
+        card.append(cardText);
+
+        section.append(card);
+
+
+    }
+</script>
+</html>
