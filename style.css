@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 250, 250);
+    color: rgb(22, 22, 24);
+    margin: 0px;
+}
+
+section{
+    padding: 5% 11% 5% 11%;
+    
+    
+  
+}
+.gallery{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+    width: auto;
+    white-space: nowrap;
+    height: auto;
+    background-color: rgb(231, 231, 231);;
+    
+}
+
+.gallery img{
+    animation-duration: 2s;
+    animation-name: slideinRight;
+    display: inline-block;
+   padding: 10px;
+   
+    height: 450px;
+    width: auto;
+   
+}
+
+
+
+.card{
+   
+   display: inline-block;
+    
+    width: 39%;
+    padding: 2%;
+    animation: boxFade ease 3s;
+    padding-bottom: 5%;
+    
+    
+}
+
+.card-image{
+    width: 100%;
+    height: 30%;
+    
+    box-shadow: 4px 5px 40px rgba(110, 110, 110, 0.411);
+}
+
+.card-text{
+   
+    padding-top: 3%;
+    height: 150px;
+    
+}
+
+p{
+    font-size: small;
+    font-weight: lighter;
+    letter-spacing: -1%;
+    line-height: 130%;
+    color: rgb(102, 102, 102);
+}
+
+.card-text p {
+    height: 64px;
+}
+
+a {
+  
+  font-weight: lighter;
+  font-size: small;
+  letter-spacing: -1%;
+  line-height: 130%;
+  
+  text-decoration: none;
+  color: rgb(32, 32, 32);
+  text-decoration: none;
+    padding-bottom: 4px;
+  background: linear-gradient(0.25turn, rgb(32, 32, 32), rgb(32, 32, 32));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.github-link{
+    font-weight: lighter;
+    font-size: small;
+    letter-spacing: -1%;
+    line-height: 130%;
+    
+    text-decoration: none;
+    color: #4078c0;
+    text-decoration: none;
+      padding-bottom: 4px;
+    background: linear-gradient(0.25turn, #4078c0, #4078c0);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    -webkit-transition: background-size 0.3s;
+    transition: background-size 0.3s;
+}
+
+a:hover,
+.navbar .content-right a:focus {
+  background-size: 100% 2px;
+}
+
+
+
+.video-section{
+    width: 100%;
+    animation-duration: 2s;
+    animation-name: slideinLeft;
+    
+}
+
+
+.video-section video{
+   
+    width: 60%;
+    height: auto;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    
+  
+}
+
+.video-section .desc{
+    width: 30%;
+    height: auto;
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+        padding: 0% 0% 20% 0%;
+
+    }
+    .video-section video{
+        width: 100%;
+        padding: 6% 0px 6% 0px ;
+        display: block;
+    }
+
+    .video-section .desc{
+        width: 100%;
+        display: block;
+    }
+  }
+
+  @keyframes boxFade {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+     }
+    
+    
+}
+
+@keyframes slideinLeft {
+    0% {
+        margin-left: -30%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideinRight {
+    0% {
+        margin-right: 50%;
+    }
+    100% {
+        margin-right: 0%;
+    }
+}
